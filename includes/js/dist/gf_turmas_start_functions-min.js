@@ -1,0 +1,1 @@
+jQuery(document).ready(function(e){var t=0;e(".turmas_nova_start option").each(function(){if(new Date(e(this).val())<new Date(e.now())||t>2){e(this).hide()}else{e(this).show(),t++}var n=new Date(e(this).val()).toLocaleString("pt-BR",{weekday:"long",year:"numeric",month:"numeric",day:"numeric",hour:"numeric",minute:"numeric"});e(this).val(n),e(this).text(n)})});
