@@ -2,7 +2,7 @@ jQuery(document).ready(function ($) {
 
     //$('body').css("background-color", "yellow");
 
-    $('.gfield_select').each(function () {
+    $('.turmas_nova_start .gfield_select').each(function () {
         if ($(this).children().val() == "Pré-inscrição") {
             return;
         }
