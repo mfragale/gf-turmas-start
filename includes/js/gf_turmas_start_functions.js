@@ -19,12 +19,12 @@ jQuery(document).ready(function ($) {
             var newval = new Date($(this).val()).toLocaleString("pt-BR", options);
 
             if (turma < hoje || visible > 4) {
-                $(this).val(newval + " - i=" + index + " - v=" + visible);
-                $(this).text(newval + " - i=" + index + " - v=" + visible);
+                $(this).val(newval);
+                $(this).text(newval);
                 $(this).hide();
             } else {
-                $(this).val(newval + " - i=" + index + " - v=" + visible);
-                $(this).text(newval + " - i=" + index + " - v=" + visible);
+                $(this).val(newval);
+                $(this).text(newval);
                 visible++;
             }
 
