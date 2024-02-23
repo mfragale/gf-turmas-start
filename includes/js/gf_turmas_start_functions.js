@@ -14,7 +14,7 @@ jQuery(document).ready(function ($) {
             var hoje = new Date($.now());
 
             const options = {
-                weekday: "long", year: "numeric", month: "numeric", day: "numeric", hour: "numeric", minute: "numeric"
+                weekday: "short", year: "numeric", month: "short", day: "numeric", hour: "numeric", minute: "numeric"
             };
             var newval = new Date($(this).val()).toLocaleString("pt-BR", options);
 
