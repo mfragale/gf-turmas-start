@@ -21,7 +21,7 @@ jQuery(document).ready(function ($) {
             if (turma < hoje || visible > 4) {
                 $(this).val(newval);
                 $(this).text(newval);
-                $(this).hide();
+                $(this).remove();
             } else {
                 $(this).val(newval);
                 $(this).text(newval);
