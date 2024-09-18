@@ -2,7 +2,18 @@ jQuery(document).ready(function ($) {
 
     //$('body').css("background-color", "yellow");
 
-    $('.turmas_nova_start .gfield_select').each(function () {
+    myFunction();
+    
+
+$( document ).on( "ajaxComplete", function() {
+console.log( "Triggered ajaxComplete handler." );
+myFunction();
+} );
+
+});
+
+function myFunction() {
+     $('.turmas_nova_start .gfield_select').each(function () {
         if ($(this).children().val() == "Pré-inscrição") {
             return;
         }
@@ -35,5 +46,4 @@ jQuery(document).ready(function ($) {
         }
 
     });
-
-});
+    }
